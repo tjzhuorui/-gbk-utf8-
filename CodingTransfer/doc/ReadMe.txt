@@ -6,5 +6,5 @@ gbk.txt 我爱你中国		采用gbk编码保存  	16进制为：ced2 b0ae c4e3 d6
 utf8.txt 我爱你中国	采用UTF8编码保存	16进制为：e688 91e7 88b1 e4bd a0e4 b8ad e59b bd
 那么我的目标是，从utf8.txt中读取文件，然后将其转换为gbk编码的byte[]，将这个byte[]与gbk.txt中的16进制比较，若一致则达到我的目的。
 
-
-	
+笔记：
+一开始，笔者一直以为如果使用gbk编码，的到的String就是
