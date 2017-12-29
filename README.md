@@ -34,3 +34,7 @@ str1.equals(str2)应该返回是true,当然前提是 gbk字节数组和utf8的�
 `实现`见：com.rui.encodetest.CodeTest2<br>
 ![](https://github.com/tjzhuorui/-gbk-utf8-/blob/master/CodingTransfer/img/2_1.png)
 
+
+#未完成事件
+*学习下MD，找一款和GitHub匹配的编辑器<br>
+*研究下gbk,utf8,unicode之间的关系
