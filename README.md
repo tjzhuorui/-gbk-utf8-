@@ -15,7 +15,12 @@ utf8.txt 我爱你中国	采用UTF8编码保存	16进制为：e688 91e7 88b1 e4b
 
 ####实现
 ---
-见代码com.rui.encodetest.CodeTest
+见代码com.rui.encodetest.CodeTest<br>
+`gbk.txt`<br>
+![](https://github.com/tjzhuorui/-gbk-utf8-/blob/master/CodingTransfer/img/1_2.png)<br>
+`运行结果`<br>
+![](https://github.com/tjzhuorui/-gbk-utf8-/blob/master/CodingTransfer/img/1_1.png)
+
 
 ####误区
 一开始我以为，gbk的字节数组通过 编码(new String(xx,"GBK"))得到的String就是一个gbk编码的String，这样再通过 str.getBytes("UTF8")拿到的字节数组就一定是错误的，是gbk的字节数组的编码。但是，我大错特错了。
@@ -27,5 +32,5 @@ GBK的byte[]数组---new String(xxx,"GBK")-->str1<br>
 UTF8的byte[]数组---new String(xxx,"UTF8")-->str2<br>
 str1.equals(str2)应该返回是true,当然前提是 gbk字节数组和utf8的字节数组表达的含义本来就是一样。<br>
 `实现`见：com.rui.encodetest.CodeTest2<br>
-
+![](https://github.com/tjzhuorui/-gbk-utf8-/blob/master/CodingTransfer/img/2_1.png)
 
